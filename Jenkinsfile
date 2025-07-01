@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Clonar Repo') {
       steps {
-        // Jenkins ya clona el repo automáticamente, este stage puede omitirse o dejar vacío
+         git 'https://github.com/DavidClaudio03/jenkins-hola_mundo.git'
       }
     }
     stage('Instalar dependencias') {
