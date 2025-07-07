@@ -13,4 +13,9 @@ pipeline {
       }
     }
   }
+  post {
+    always {
+      archiveArtifacts artifacts: 'build/**', allowEmptyArchive: true
+    }
+  }
 }
